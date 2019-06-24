@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 
 /**
  * <pre>
- * desc :
+ * desc : 2908, 상수
  * </pre>
  * @author kang.ji.hye
  * @since 2019. 6. 23. 오후 11:30:49
