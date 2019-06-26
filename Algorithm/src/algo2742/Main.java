@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 
 /**
  * <pre>
- * desc :
+ * desc : 2742, 기찍N
  * </pre>
  * @author kang.ji.hye
  * @since 2019. 6. 25. 오후 10:05:28
