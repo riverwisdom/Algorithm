@@ -30,21 +30,20 @@ public class Solution {
 		int tmpBinaryGap = 0;
         boolean isZero = false;
 		String binaryN = Integer.toBinaryString(N);
-		// 1001
-		for(int i = 1 ; i < binaryN.length(); i++) {
+		
+		for(int i = 0 ; i < binaryN.length(); i++) {
 			if(binaryN.charAt(i) == '0') {
-				if(isZero || i == 1) {
-					tmpBinaryGap++;
-					isZero = true;
-				} else {
-					tmpBinaryGap = 0;
-				}
+				tmpBinaryGap++;
 				isZero = true;
 			} else {
-				if(binaryGap == 0 || tmpBinaryGap >= binaryGap) {
-					binaryGap = tmpBinaryGap;
-					isZero = false;
+				if(!isZero) {
+					tmpBinaryGap = 0;
 				}
+				if(tmpBinaryGap >= binaryGap) {
+					binaryGap = tmpBinaryGap;
+				}
+				tmpBinaryGap = 0;
+				isZero = false;
 			}
 		}
 		return binaryGap;
