@@ -35,7 +35,8 @@ public class Solution {
 	}
 	public static int solution(int[] A) {
         int result = 0;
-        int temp[] = new int[A.length];
+        // 66점 코드
+        /*int temp[] = new int[A.length];
         for(int i = 0 ; i < A.length; i++) {
         	temp[i] = 0;
         }
@@ -50,6 +51,10 @@ public class Solution {
         	if(temp[i] % 2 != 0) {
         		result = A[i];
         	}
+        }*/
+        // XOR 연산 이용 100점
+        for(int i=0; i<A.length; i++){   
+        	result ^= A[i];
         }
         return result;
     }
